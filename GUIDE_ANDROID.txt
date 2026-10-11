@@ -1,0 +1,33 @@
+ECLAT STUDIO - VERSION ANDROID (via GitHub)
+===========================================
+Vous n'installez rien sur votre PC : GitHub fabrique l'APK pour vous.
+
+ETAPE 1 - Compte et depot
+ - Allez sur github.com, creez un compte gratuit.
+ - Cliquez sur "+" (en haut) > "New repository". Nom : eclat-studio. Create repository.
+
+ETAPE 2 - Envoyer les fichiers
+ - Decompressez ce ZIP sur votre ordinateur.
+ - Sur la page du depot : "uploading an existing file".
+ - Glissez TOUT le contenu du dossier : www, assets, .github, package.json,
+   capacitor.config.json, .gitignore.
+   (Si le dossier .github n'est pas pris : "Add file" > "Create new file",
+    ecrivez  .github/workflows/build-apk.yml  et collez le contenu du fichier.)
+ - Cliquez "Commit changes".
+
+ETAPE 3 - Fabriquer l'APK
+ - Onglet "Actions" > "Build APK Android" > "Run workflow".
+ - Attendez 5 a 10 minutes (pastille verte = termine).
+
+ETAPE 4 - Recuperer l'application
+ - Cliquez sur l'execution terminee > en bas, "Artifacts" > Eclat-Studio-APK.
+ - Decompressez, envoyez app-debug.apk sur votre telephone, ouvrez-le.
+ - Autorisez "Installer des applications inconnues" si Android le demande.
+
+A SAVOIR (version Android)
+ - Vos donnees restent sur le telephone. Sauvegardez regulierement.
+ - Les boutons qui TELECHARGENT un fichier (sauvegarde, rappels .ics, Excel,
+   image modele) peuvent ne pas fonctionner dans l'APK. Copier, WhatsApp,
+   photos et publication assistee fonctionnent.
+ - Pour changer l'application : remplacez www/index.html sur GitHub puis
+   relancez "Run workflow".
